@@ -1,0 +1,26 @@
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px
+}
+
+h1 {
+    text-align: center;
+}
+
+.post-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.post-item {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 80%
+}
+
+.post-item {
+    margin-bottom: 10px;
+}
