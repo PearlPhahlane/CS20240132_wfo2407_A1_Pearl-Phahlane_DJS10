@@ -1,9 +1,12 @@
 import React from "react";
+import BlogPosts from ".BlogPost.jsx"
 
 
 function App() {
   return (
-    <h1>hello pearl</h1>
+    <div>
+      <BlogPosts />
+    </div>
   );
 }
 
