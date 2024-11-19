@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-const Blog Posts = () => {
-    
+const BlogPosts = () => {
+
 }
