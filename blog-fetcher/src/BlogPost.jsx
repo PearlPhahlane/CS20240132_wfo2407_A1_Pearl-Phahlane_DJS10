@@ -17,7 +17,7 @@ const BlogPosts = () => {
                 }
                 const data = await response.json();
                 setPost(data);
-            }   catch(err) {
+            }catch(err) {
                 setError(err.message);
             }
         };
@@ -25,4 +25,24 @@ const BlogPosts = () => {
         fetchPost();
     }, []); //empty dependency array ensures this runs only once
 
-}
+    //conditional rendering 
+    if (error) {
+        return <p>Error: {error}</p>
+    }
+
+    return (
+        <div className='blog-container'>
+            <h1>Blog Post</h1>
+            <ol className='post-list'>
+                {post.map((post) =>
+                <li key={post.id} className='post-item'>
+                    <h2>{post.title}</h2>
+                    <p>{post.body}</p>
+                </li>
+            )}
+            </ol>
+        </div>
+    );
+};
+
+export default BlogPosts;
