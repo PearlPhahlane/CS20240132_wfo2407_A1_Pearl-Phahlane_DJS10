@@ -33,7 +33,7 @@ const BlogPosts = () => {
 
     return (
         <div className='blog-container'>
-            <h1>Blog Post</h1>
+            <h1>Posts</h1>
             <ol className='post-list'>
                 {post.map((post) =>
                 <li key={post.id} className='post-item'>
