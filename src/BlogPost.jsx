@@ -19,6 +19,7 @@ const BlogPosts = () => {
                 const data = await response.json();
                 setPost(data);
             }catch(err) {
+                //store the error message in the state and not log it to the console
                 setError(err.message);
             }
         };
