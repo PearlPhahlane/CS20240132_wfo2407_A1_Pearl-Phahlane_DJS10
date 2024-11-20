@@ -1,5 +1,5 @@
 import React from "react";
-import BlogPosts from ".BlogPost.jsx"
+import BlogPosts from "./BlogPost"
 
 
 function App() {
